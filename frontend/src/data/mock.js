@@ -1,20 +1,22 @@
-// Mock data for portfolio website
+// Portfolio data for Vishwajeet Niradi
 
 export const personalInfo = {
-  name: "Luiz Gustavo Alves",
+  name: "Vishwajeet Niradi",
   greeting: "Hi! I'm",
-  title: "Software Developer",
-  subtitle: "Software Developer with experience in creating scalable and modern applications",
-  email: "contact@luizgustavoalves.dev",
-  github: "luiz-gustavo-alves",
-  linkedin: "luiz-gustavo-alves-dev",
-  linkedinUrl: "https://www.linkedin.com/in/luiz-gustavo-alves-dev/?locale=en_US",
-  githubUrl: "https://github.com/luiz-gustavo-alves"
+  title: "AI / Data Engineer",
+  subtitle: "AI & Data Engineer with expertise in building intelligent systems, RAG pipelines, and data-driven solutions",
+  email: "vniradi08@gmail.com",
+  phone: "+1 862-409-0121",
+  location: "New York, NY",
+  github: "vishwajeet-niradi",
+  linkedin: "vishwajeet-niradi",
+  linkedinUrl: "https://www.linkedin.com/in/vishwajeet-niradi",
+  githubUrl: "https://github.com/vishwajeet-niradi"
 };
 
 export const navLinks = [
   { name: "ABOUT", href: "#about" },
-  { name: "EXPERIENCE", href: "#about" },
+  { name: "EXPERIENCE", href: "#experience" },
   { name: "PROJECTS", href: "#projects" },
   { name: "CONTACT", href: "#contact" }
 ];
@@ -22,125 +24,190 @@ export const navLinks = [
 export const services = [
   {
     id: 1,
-    icon: "Code",
-    title: "Frontend Development",
-    description: "Building complete, modern and responsive user interfaces for all types of devices.",
+    icon: "Brain",
+    title: "AI & LLM Development",
+    description: "Building intelligent chatbots, RAG pipelines, and AI agents using cutting-edge frameworks for enterprise solutions.",
     skills: [
-      { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
-      { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
-      { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-      { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-      { name: "Shadcn", icon: null },
-      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
-      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" }
+      { name: "LangChain", icon: null },
+      { name: "LangGraph", icon: null },
+      { name: "RAG", icon: null },
+      { name: "Prompt Engineering", icon: null },
+      { name: "Fine Tuning", icon: null },
+      { name: "Crew AI", icon: null },
+      { name: "MCP", icon: null }
     ]
   },
   {
     id: 2,
-    icon: "Server",
-    title: "Backend Development",
-    description: "Creating secure, scalable and high performance servers, building APIs, database integrations, microservices, Cron-Jobs, Artificial Intelligence (AI).",
+    icon: "Database",
+    title: "Data Engineering",
+    description: "Designing robust data pipelines, ETL processes, and database solutions for scalable data infrastructure.",
     skills: [
-      { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
-      { name: "NestJS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" },
-      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
-      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
-      { name: "Prisma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" },
-      { name: "Postgres", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
-      { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" },
-      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" }
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+      { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
+      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+      { name: "Databricks", icon: null },
+      { name: "Cosmos DB", icon: null }
     ]
   },
   {
     id: 3,
-    icon: "Wrench",
-    title: "Maintenance & Monitoring",
-    description: "Bug fixes, tech support, application performance monitoring and development of new features that satisfy costumer needs.",
+    icon: "Cloud",
+    title: "Cloud Solutions",
+    description: "Deploying scalable cloud-native services on Azure and AWS with secure secret management and monitoring.",
     skills: [
-      { name: "Prometheus", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg" },
-      { name: "Grafana", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" }
+      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+      { name: "Azure OpenAI", icon: null },
+      { name: "Key Vault", icon: null },
+      { name: "Log Analytics", icon: null }
     ]
   },
   {
     id: 4,
-    icon: "Flask",
-    title: "Software Testing",
-    description: "End to End & Unit Tests, building high rate requests scenarios (Stress Tests).",
+    icon: "BarChart3",
+    title: "Data Analytics & BI",
+    description: "Creating insightful dashboards and reports using Power BI and Tableau for data-driven decision making.",
     skills: [
-      { name: "Jest", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" },
-      { name: "K6", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/k6/k6-original.svg" },
-      { name: "Cypress", icon: null },
-      { name: "Supertest", icon: null },
-      { name: "Faker", icon: null }
+      { name: "Power BI", icon: null },
+      { name: "Tableau", icon: null },
+      { name: "Excel", icon: null },
+      { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
+      { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" },
+      { name: "Matplotlib", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" }
     ]
   },
   {
     id: 5,
-    icon: "Globe",
-    title: "Performance & Digital Presence",
-    description: "Optimizing websites for speed and search engines visibility, SEO, marketing campaigns and leads capture.",
+    icon: "Code",
+    title: "Programming & Development",
+    description: "Building robust backend workflows, web scrapers, and automation scripts for various applications.",
     skills: [
-      { name: "Google Tag Manager", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" },
-      { name: "Google Analytics", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" },
-      { name: "Facebook Pixel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg" },
-      { name: "SEO", icon: null },
-      { name: "Lighthouse", icon: null }
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+      { name: "R", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" },
+      { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+      { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+      { name: "Selenium", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" },
+      { name: "BeautifulSoup", icon: null }
     ]
   },
   {
     id: 6,
-    icon: "Router",
-    title: "Web Hosting",
-    description: "Hosting webistes, domain and subdomain configurations, creating business email.",
+    icon: "Search",
+    title: "Search & Retrieval",
+    description: "Implementing hybrid search pipelines with vector embeddings and text indices for accurate information retrieval.",
     skills: [
-      { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" },
-      { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-      { name: "Cloudflare", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" },
-      { name: "HostGator", icon: null },
-      { name: "Email", icon: null }
+      { name: "Cognitive Search", icon: null },
+      { name: "VoyageAI", icon: null },
+      { name: "Vector DB", icon: null },
+      { name: "Embeddings", icon: null },
+      { name: "Scikit-Learn", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" }
     ]
+  }
+];
+
+export const experiences = [
+  {
+    id: 1,
+    company: "FIS",
+    location: "New York City, NY",
+    role: "AI / Data Engineer",
+    period: "Jun 2025 - Present",
+    type: "Full-time",
+    description: [
+      "Supporting an AI-powered chatbot initiative for Treasury & Risk division, focusing on prompt engineering, RAG pipelines, and response optimization",
+      "Building backend workflows leveraging Azure SDK and cloud-native services including Key Vault and Log Analytics",
+      "Implementing agentic frameworks (LangChain, LangGraph) integrated with Azure OpenAI, Cognitive Search, and Cosmos DB"
+    ],
+    skills: ["LangChain", "LangGraph", "Azure OpenAI", "RAG", "Python", "Cosmos DB"]
+  },
+  {
+    id: 2,
+    company: "Sphara Consulting",
+    location: "Greenwich, CT",
+    role: "Data Analyst Intern",
+    period: "Jul 2024 - Dec 2024",
+    type: "Internship",
+    description: [
+      "Increased speed and performance of Excel reports by 40% by restructuring them in Power BI",
+      "Developed web scraper scripts using Python (BeautifulSoup, Selenium) and stored data in SQL database",
+      "Established automation on 5+ websites as per client's requirements"
+    ],
+    skills: ["Power BI", "Python", "SQL", "Selenium", "Web Scraping"]
+  },
+  {
+    id: 3,
+    company: "Accenture",
+    location: "Bangalore, India",
+    role: "Data Analyst",
+    period: "Aug 2021 - Jul 2023",
+    type: "Full-time",
+    description: [
+      "Developed Marketing and Product performance dashboards using Power BI and SQL, yielding 20% increase in data-driven insights",
+      "Communicated complex analysis to non-technical stakeholders, improving performance by 25% in agile environment",
+      "Designed HR dashboard tracking KPIs for 800+ profiles as part of client recruitment initiative"
+    ],
+    skills: ["Power BI", "SQL", "Data Analysis", "Dashboard Development", "Agile"]
+  }
+];
+
+export const education = [
+  {
+    id: 1,
+    institution: "Montclair State University",
+    location: "New Jersey",
+    degree: "Master of Science in Data Science",
+    gpa: "4.0",
+    period: "Aug 2023 - Jun 2025"
+  },
+  {
+    id: 2,
+    institution: "SDM College of Engineering & Technology",
+    location: "Karnataka, India",
+    degree: "Bachelor of Technology in Computer Science",
+    gpa: null,
+    period: "Sept 2017 - Jul 2021"
   }
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "CFMOTO Brazil | MotorSync",
-    description: "Website for CFMOTO Brazil to showcase their Off-Road vehicles and dealers websites. I created the following user interfaces: HomePage, Type of Products, Product Categories, Product Page, Accessories Page, About Us, Tech Assist and Contact Page.",
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&auto=format&fit=crop&q=60",
-    link: "https://cfmoto.com.br/",
+    title: "Enterprise Chatbot for Treasury Knowledge Management",
+    description: "Engineered an enterprise-grade RAG-based assistant to streamline access to internal treasury and risk documents. Deployed agentic frameworks for multi-step reasoning, enabling autonomous retrieval, interpretation, and summarization of business insights.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=60",
+    link: null,
     type: "Work",
-    tags: ["TypeScript", "Next.js", "React", "Tailwind", "Shadcn", "NestJS", "Prisma"]
+    tags: ["RAG", "LangChain", "Azure OpenAI", "Cosmos DB", "Log Analytics"]
   },
   {
     id: 2,
-    title: "Lawyer Website",
-    description: "A professional, visually appealing and responsive lawyer website for all devices. Designed to optimize digital presence and showcase their services. Includes office, services, advocacy team, address and contact pages.",
-    image: "https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=800&auto=format&fit=crop&q=60",
-    link: "https://catarinaaraujoadvocacia.adv.br/",
-    type: "Freelancer",
-    tags: ["TypeScript", "Next.js", "React", "Tailwind", "Shadcn", "Vercel"]
+    title: "RAG-Based Assistant for Supply Chain Insights",
+    description: "Developed a domain-specific agent leveraging RAG and MongoDB to answer natural language queries on contracts, inventory, and shipment data. Designed hybrid search pipeline with VoyageAI embeddings for accurate retrieval.",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=60",
+    link: null,
+    type: "Personal",
+    tags: ["RAG", "MongoDB", "VoyageAI", "NLP", "Python"]
   },
   {
     id: 3,
-    title: "Portfolio",
-    description: "Portfolio built with Next.js, Typescript, Tailwind and reusable UI components that can be used across the entire application. Includes animations, features such as: internationalization (i18n) for English and Portuguese languages, dark mode and quick access menu for mobile devices.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
-    link: "https://luizgustavoalves.dev/",
-    githubLink: "https://github.com/luiz-gustavo-alves/portfolio",
-    type: "Personal",
-    tags: ["TypeScript", "Next.js", "React", "Tailwind", "Shadcn", "i18n", "Vercel"]
+    title: "Marketing & Product Performance Dashboard",
+    description: "Built comprehensive Power BI dashboards for UK's largest Oil and Gas corporations, yielding 20% increase in data-driven insights for marketing and product teams.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+    link: null,
+    type: "Work",
+    tags: ["Power BI", "SQL", "Data Analytics", "Dashboard", "KPIs"]
   },
   {
     id: 4,
-    title: "College Dorms Search Engine",
-    description: "Website to help students find nearby colleges using search components based on colleges, cities, and states that have nearby dorms. Includes features for customized search filters such as: distance, price, category (male, female, mixed dorms), and lifestyle habits.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=60",
+    title: "HR Recruitment Analytics Dashboard",
+    description: "Designed an HR dashboard to track recruitment KPIs including candidates interviewed, selected, accepted offers, and joined - managing data for 800+ profiles.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
     link: null,
-    type: "Personal",
-    inProgress: true,
-    tags: ["TypeScript", "Next.js", "React", "Tailwind", "Shadcn", "NestJS", "Prisma"]
+    type: "Work",
+    tags: ["Power BI", "HR Analytics", "KPI Tracking", "Data Visualization"]
   }
 ];
 
@@ -148,28 +215,28 @@ export const contactLinks = [
   {
     id: 1,
     name: "GitHub",
-    handle: "luiz-gustavo-alves",
-    url: "https://github.com/luiz-gustavo-alves",
+    handle: "vishwajeet-niradi",
+    url: "https://github.com/vishwajeet-niradi",
     icon: "Github"
   },
   {
     id: 2,
     name: "LinkedIn",
-    handle: "luiz-gustavo-alves-dev",
-    url: "https://www.linkedin.com/in/luiz-gustavo-alves-dev/?locale=en_US",
+    handle: "vishwajeet-niradi",
+    url: "https://www.linkedin.com/in/vishwajeet-niradi",
     icon: "Linkedin"
   },
   {
     id: 3,
     name: "Email",
-    handle: "contact@luizgustavoalves.dev",
-    url: "mailto:contact@luizgustavoalves.dev",
+    handle: "vniradi08@gmail.com",
+    url: "mailto:vniradi08@gmail.com",
     icon: "Mail"
   }
 ];
 
-export const servicesIntro = "I offer services to create and provide maintenance for websites, optimize digital presence of your business and host your website with business email and custom domains";
+export const servicesIntro = "I specialize in building AI-powered solutions, data pipelines, and analytics dashboards. From enterprise chatbots to cloud-native applications, I deliver scalable and intelligent systems.";
 
-export const projectsIntro = "Explore some of my recent work. Includes work projects, freelancer and personal projects.";
+export const projectsIntro = "Explore some of my recent work. Includes enterprise AI solutions, data analytics dashboards, and personal projects.";
 
-export const contactIntro = "Have a project idea or interested in my services? Contact me through these communication channels";
+export const contactIntro = "Have a project idea or interested in collaborating? Let's connect and build something amazing together.";
