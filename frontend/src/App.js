@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -40,6 +41,7 @@ function App() {
         <Services darkMode={darkMode} />
         <Experience darkMode={darkMode} />
         <Projects darkMode={darkMode} />
+        <Certifications darkMode={darkMode} />
         <Contact darkMode={darkMode} />
       </main>
       <Footer darkMode={darkMode} />

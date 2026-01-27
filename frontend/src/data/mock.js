@@ -221,6 +221,27 @@ export const contactLinks = [
   }
 ];
 
+export const certifications = [
+  {
+    id: 1,
+    name: "Azure Certified AI Developer Associate",
+    issuer: "Microsoft",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+  },
+  {
+    id: 2,
+    name: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+    issuer: "Oracle",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+  },
+  {
+    id: 3,
+    name: "Google Data Analytics Professional Certificate",
+    issuer: "Google",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
+  }
+];
+
 export const servicesIntro = "I specialize in building AI-powered solutions, data pipelines, and analytics dashboards. From enterprise chatbots to cloud-native applications, I deliver scalable and intelligent systems.";
 
 export const projectsIntro = "Explore some of my recent work. Includes enterprise AI solutions, data analytics dashboards, and personal projects.";
