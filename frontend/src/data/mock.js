@@ -3,8 +3,8 @@
 export const personalInfo = {
   name: "Vishwajeet Niradi",
   greeting: "Hi! I'm",
-  title: "AI / Data Engineer",
-  subtitle: "AI & Data Engineer with expertise in building intelligent systems, RAG pipelines, and data-driven solutions",
+  title: "AI Engineer",
+  subtitle: "AI Engineer with expertise in building intelligent systems, RAG pipelines, and data-driven solutions",
   email: "vniradi08@gmail.com",
   phone: "+1 862-409-0121",
   location: "New York, NY",
@@ -39,20 +39,6 @@ export const services = [
   },
   {
     id: 2,
-    icon: "Database",
-    title: "Data Engineering",
-    description: "Designing robust data pipelines, ETL processes, and database solutions for scalable data infrastructure.",
-    skills: [
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-      { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" },
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
-      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
-      { name: "Databricks", icon: null },
-      { name: "Cosmos DB", icon: null }
-    ]
-  },
-  {
-    id: 3,
     icon: "Cloud",
     title: "Cloud Solutions",
     description: "Deploying scalable cloud-native services on Azure and AWS with secure secret management and monitoring.",
@@ -66,7 +52,7 @@ export const services = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     icon: "BarChart3",
     title: "Data Analytics & BI",
     description: "Creating insightful dashboards and reports using Power BI and Tableau for data-driven decision making.",
@@ -80,7 +66,7 @@ export const services = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     icon: "Code",
     title: "Programming & Development",
     description: "Building robust backend workflows, web scrapers, and automation scripts for various applications.",
@@ -94,7 +80,7 @@ export const services = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     icon: "Search",
     title: "Search & Retrieval",
     description: "Implementing hybrid search pipelines with vector embeddings and text indices for accurate information retrieval.",
@@ -177,7 +163,7 @@ export const projects = [
     id: 1,
     title: "Enterprise Chatbot for Treasury Knowledge Management",
     description: "Engineered an enterprise-grade RAG-based assistant to streamline access to internal treasury and risk documents. Deployed agentic frameworks for multi-step reasoning, enabling autonomous retrieval, interpretation, and summarization of business insights.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=60",
+    image: null,
     link: null,
     type: "Work",
     tags: ["RAG", "LangChain", "Azure OpenAI", "Cosmos DB", "Log Analytics"]
@@ -186,7 +172,7 @@ export const projects = [
     id: 2,
     title: "RAG-Based Assistant for Supply Chain Insights",
     description: "Developed a domain-specific agent leveraging RAG and MongoDB to answer natural language queries on contracts, inventory, and shipment data. Designed hybrid search pipeline with VoyageAI embeddings for accurate retrieval.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=60",
+    image: null,
     link: null,
     type: "Personal",
     tags: ["RAG", "MongoDB", "VoyageAI", "NLP", "Python"]
@@ -195,7 +181,7 @@ export const projects = [
     id: 3,
     title: "Marketing & Product Performance Dashboard",
     description: "Built comprehensive Power BI dashboards for UK's largest Oil and Gas corporations, yielding 20% increase in data-driven insights for marketing and product teams.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+    image: null,
     link: null,
     type: "Work",
     tags: ["Power BI", "SQL", "Data Analytics", "Dashboard", "KPIs"]
@@ -204,7 +190,7 @@ export const projects = [
     id: 4,
     title: "HR Recruitment Analytics Dashboard",
     description: "Designed an HR dashboard to track recruitment KPIs including candidates interviewed, selected, accepted offers, and joined - managing data for 800+ profiles.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+    image: null,
     link: null,
     type: "Work",
     tags: ["Power BI", "HR Analytics", "KPI Tracking", "Data Visualization"]
