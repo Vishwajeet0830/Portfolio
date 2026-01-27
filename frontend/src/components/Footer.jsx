@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/mock';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, MapPin, Phone } from 'lucide-react';
 
 const Footer = ({ darkMode }) => {
   const currentYear = new Date().getFullYear();
@@ -23,6 +23,16 @@ const Footer = ({ darkMode }) => {
           >
             <span>© {currentYear} {personalInfo.name}. Made with</span>
             <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+          </div>
+
+          {/* Location */}
+          <div
+            className={`flex items-center gap-1.5 text-sm ${
+              darkMode ? 'text-gray-400' : 'text-gray-500'
+            }`}
+          >
+            <MapPin className="w-4 h-4" />
+            <span>{personalInfo.location}</span>
           </div>
 
           {/* Social Links */}
