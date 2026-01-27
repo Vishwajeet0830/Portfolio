@@ -8,10 +8,10 @@ export const personalInfo = {
   email: "vniradi08@gmail.com",
   phone: "+1 862-409-0121",
   location: "New York, NY",
-  github: "vishwajeet-niradi",
-  linkedin: "vishwajeet-niradi",
-  linkedinUrl: "https://www.linkedin.com/in/vishwajeet-niradi",
-  githubUrl: "https://github.com/vishwajeet-niradi"
+  github: "Vishwajeet0830",
+  linkedin: "vishwajeet-niradi-844979194",
+  linkedinUrl: "https://www.linkedin.com/in/vishwajeet-niradi-844979194/",
+  githubUrl: "https://github.com/Vishwajeet0830"
 };
 
 export const navLinks = [
@@ -201,15 +201,15 @@ export const contactLinks = [
   {
     id: 1,
     name: "GitHub",
-    handle: "vishwajeet-niradi",
-    url: "https://github.com/vishwajeet-niradi",
+    handle: "Vishwajeet0830",
+    url: "https://github.com/Vishwajeet0830",
     icon: "Github"
   },
   {
     id: 2,
     name: "LinkedIn",
     handle: "vishwajeet-niradi",
-    url: "https://www.linkedin.com/in/vishwajeet-niradi",
+    url: "https://www.linkedin.com/in/vishwajeet-niradi-844979194/",
     icon: "Linkedin"
   },
   {
