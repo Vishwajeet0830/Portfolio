@@ -18,45 +18,45 @@ const Hero = ({ darkMode }) => {
       }`}
     >
       {/* Animated Concentric Circles Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 pointer-events-none">
-        <div className="relative">
-          {/* Outer circle */}
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+        <div className="relative" style={{ marginTop: '-5%' }}>
+          {/* Outer circle - largest */}
           <div
-            className="absolute rounded-full animate-pulse"
+            className="rounded-full transition-all duration-1000"
             style={{
-              width: '700px',
-              height: '700px',
+              width: '680px',
+              height: '680px',
               background: darkMode
-                ? 'radial-gradient(circle, rgba(244, 114, 114, 0.15) 0%, rgba(244, 114, 114, 0.05) 100%)'
-                : 'rgba(252, 182, 182, 0.5)',
-              top: '-350px',
-              left: '-350px',
+                ? 'rgba(244, 114, 114, 0.12)'
+                : 'rgba(252, 190, 190, 0.55)',
             }}
           />
           {/* Middle circle */}
           <div
-            className="absolute rounded-full"
+            className="absolute rounded-full transition-all duration-1000"
             style={{
-              width: '500px',
-              height: '500px',
+              width: '480px',
+              height: '480px',
               background: darkMode
-                ? 'radial-gradient(circle, rgba(244, 114, 114, 0.25) 0%, rgba(244, 114, 114, 0.1) 100%)'
-                : 'rgba(249, 150, 150, 0.6)',
-              top: '-250px',
-              left: '-250px',
+                ? 'rgba(244, 114, 114, 0.2)'
+                : 'rgba(248, 158, 158, 0.65)',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
             }}
           />
-          {/* Inner circle */}
+          {/* Inner circle - smallest */}
           <div
-            className="absolute rounded-full"
+            className="absolute rounded-full transition-all duration-1000"
             style={{
-              width: '300px',
-              height: '300px',
+              width: '280px',
+              height: '280px',
               background: darkMode
-                ? 'radial-gradient(circle, rgba(244, 114, 114, 0.4) 0%, rgba(244, 114, 114, 0.2) 100%)'
+                ? 'rgba(244, 114, 114, 0.35)'
                 : 'rgba(244, 114, 114, 0.7)',
-              top: '-150px',
-              left: '-150px',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
             }}
           />
         </div>
