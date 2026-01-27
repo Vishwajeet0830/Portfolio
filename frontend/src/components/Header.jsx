@@ -47,7 +47,7 @@ const Header = ({ darkMode, setDarkMode }) => {
               darkMode ? 'text-white hover:text-gray-300' : 'text-gray-900 hover:text-gray-600'
             }`}
           >
-            LUIZ GUSTAVO ALVES
+            VISHWAJEET NIRADI
           </a>
 
           {/* Desktop Navigation */}
