@@ -1,6 +1,6 @@
 import React from 'react';
 import { services, servicesIntro } from '../data/mock';
-import { Code, Server, Wrench, FlaskConical, Globe, Router, Asterisk } from 'lucide-react';
+import { Code, Server, Wrench, FlaskConical, Globe, Router, Asterisk, Brain, Database, Cloud, BarChart3, Search } from 'lucide-react';
 
 const iconMap = {
   Code: Code,
@@ -9,6 +9,11 @@ const iconMap = {
   Flask: FlaskConical,
   Globe: Globe,
   Router: Router,
+  Brain: Brain,
+  Database: Database,
+  Cloud: Cloud,
+  BarChart3: BarChart3,
+  Search: Search,
 };
 
 const ServiceCard = ({ service, darkMode }) => {
