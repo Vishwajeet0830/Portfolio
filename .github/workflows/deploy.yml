@@ -25,19 +25,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'yarn'
-          cache-dependency-path: frontend/yarn.lock
 
       - name: Install dependencies
         working-directory: ./frontend
-        run: yarn install --frozen-lockfile
+        run: |
+          npm install --legacy-peer-deps
 
       - name: Build
         working-directory: ./frontend
         env:
           PUBLIC_URL: /Portfolio
-          REACT_APP_BACKEND_URL: ""
-        run: yarn build
+          CI: false
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
