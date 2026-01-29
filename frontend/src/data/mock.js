@@ -230,7 +230,7 @@ export const certifications = [
   },
   {
     id: 2,
-    name: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+    name: "Oracle Cloud Infrastructure Certified Generative AI Professional",
     issuer: "Oracle",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
   },
