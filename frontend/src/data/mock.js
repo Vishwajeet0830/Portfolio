@@ -224,7 +224,7 @@ export const contactLinks = [
 export const certifications = [
   {
     id: 1,
-    name: "Azure Certified AI Developer Associate",
+    name: "Azure AI Engineer Associate",
     issuer: "Microsoft",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
   },
