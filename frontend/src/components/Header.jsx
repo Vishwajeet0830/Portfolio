@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { navLinks } from '../data/mock';
-import { Languages, Sun, Moon, Menu, X } from 'lucide-react';
+import { navLinks, personalInfo } from '../data/mock';
+import { Languages, Sun, Moon, Menu, X, Github } from 'lucide-react';
 
 const Header = ({ darkMode, setDarkMode }) => {
   const [scrolled, setScrolled] = useState(false);

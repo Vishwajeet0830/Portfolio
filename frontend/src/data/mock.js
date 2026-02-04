@@ -200,10 +200,10 @@ export const projects = [
 export const contactLinks = [
   {
     id: 1,
-    name: "GitHub",
-    handle: "Vishwajeet0830",
-    url: "https://github.com/Vishwajeet0830",
-    icon: "Github"
+    name: "Phone",
+    handle: "+1 862-409-0121",
+    url: "tel:+18624090121",
+    icon: "Phone"
   },
   {
     id: 2,

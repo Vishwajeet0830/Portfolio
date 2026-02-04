@@ -1,11 +1,12 @@
 import React from 'react';
 import { contactLinks, contactIntro } from '../data/mock';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 const iconMap = {
   Github: Github,
   Linkedin: Linkedin,
   Mail: Mail,
+  Phone: Phone,
 };
 
 const ContactCard = ({ contact, darkMode }) => {
