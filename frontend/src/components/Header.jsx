@@ -69,6 +69,19 @@ const Header = ({ darkMode, setDarkMode }) => {
 
           {/* Actions */}
           <div className="flex items-center space-x-2 lg:space-x-4">
+            <a
+              href={personalInfo.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`p-2 rounded-lg transition-colors ${
+                darkMode
+                  ? 'text-gray-300 hover:text-white hover:bg-gray-800'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+              }`}
+              title="GitHub"
+            >
+              <Github className="w-5 h-5" />
+            </a>
             <button
               className={`p-2 rounded-lg transition-colors ${
                 darkMode
