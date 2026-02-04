@@ -83,16 +83,6 @@ const Header = ({ darkMode, setDarkMode }) => {
               <Github className="w-5 h-5" />
             </a>
             <button
-              className={`p-2 rounded-lg transition-colors ${
-                darkMode
-                  ? 'text-gray-300 hover:text-white hover:bg-gray-800'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-              }`}
-              title="Language"
-            >
-              <Languages className="w-5 h-5" />
-            </button>
-            <button
               onClick={() => setDarkMode(!darkMode)}
               className={`p-2 rounded-lg transition-colors ${
                 darkMode
