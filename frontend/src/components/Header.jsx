@@ -73,14 +73,14 @@ const Header = ({ darkMode, setDarkMode }) => {
               href={personalInfo.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={`p-2 rounded-lg transition-colors ${
+              className={`group flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 ${
                 darkMode
-                  ? 'text-gray-300 hover:text-white hover:bg-gray-800'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                  ? 'border-gray-700 text-white hover:bg-gray-800 hover:border-gray-500'
+                  : 'border-gray-300 text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900'
               }`}
-              title="GitHub"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-4 h-4" />
+              <span className="text-sm font-medium hidden sm:inline">GitHub</span>
             </a>
             <button
               onClick={() => setDarkMode(!darkMode)}
