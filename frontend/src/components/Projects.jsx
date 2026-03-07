@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { projects, projectsIntro } from '../data/mock';
-import { ExternalLink, Github, Folder, X, Database, Cloud, Brain, Code, Server, Layers, CheckCircle, ArrowRight } from 'lucide-react';
+import { ExternalLink, Github, Folder } from 'lucide-react';
 
 const ProjectDetailModal = ({ project, darkMode, onClose }) => {
   if (!project || !project.details) return null;
