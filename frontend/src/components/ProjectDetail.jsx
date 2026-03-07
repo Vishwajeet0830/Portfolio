@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Github, ExternalLink, Calendar, User, Briefcase, CheckCircle, Zap, Database, Code, Server, Brain, Layers, Target } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink, Calendar, User, Briefcase, CheckCircle, Zap, Code, Server, Brain, Layers, Target, Monitor } from 'lucide-react';
 
 const ProjectDetail = ({ project, darkMode, onBack }) => {
   if (!project || !project.details) return null;
@@ -121,12 +121,92 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
         </div>
       </section>
 
-      {/* Screenshots Gallery */}
+      {/* 1. Project Overview */}
+      <section className={`py-16 px-6 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
+              <Layers className="w-5 h-5 text-white" />
+            </div>
+            Project Overview
+          </h2>
+          <p className={`text-base leading-relaxed mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            {details.overview}
+          </p>
+
+          {/* Industry Challenge */}
+          {details.industryChallenge && (
+            <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-gray-50'} border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+              <h3 className={`text-lg font-semibold mb-3 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+                Industry Challenge
+              </h3>
+              <p className={`text-sm leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+                {details.industryChallenge}
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* 2. System Architecture */}
+      <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
+        <div className="max-w-5xl mx-auto">
+          <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
+              <Server className="w-5 h-5 text-white" />
+            </div>
+            System Architecture
+          </h2>
+          
+          {details.architectureDescription && (
+            <p className={`text-base leading-relaxed mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              {details.architectureDescription}
+            </p>
+          )}
+
+          {/* Architecture Image */}
+          {details.architectureImage && (
+            <div className={`rounded-xl overflow-hidden border mb-8 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+              <img
+                src={details.architectureImage}
+                alt="System Architecture"
+                className="w-full h-auto"
+              />
+            </div>
+          )}
+
+          {/* Architecture Flow */}
+          <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-white'} border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+            <h3 className={`text-lg font-semibold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+              Data Flow
+            </h3>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {details.architectureFlow.map((step, index) => (
+                <React.Fragment key={index}>
+                  <div className={`px-4 py-3 rounded-lg text-center ${
+                    darkMode ? 'bg-gray-700 text-gray-200' : 'bg-gray-50 text-gray-700'
+                  } shadow-sm border ${darkMode ? 'border-gray-600' : 'border-gray-200'}`}>
+                    <span className="text-sm font-medium">{step}</span>
+                  </div>
+                  {index < details.architectureFlow.length - 1 && (
+                    <div className={`text-2xl ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>→</div>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Application Demo */}
       {details.screenshots && details.screenshots.length > 0 && (
         <section className={`py-16 px-6 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
           <div className="max-w-6xl mx-auto">
-            <h2 className={`text-2xl font-bold mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Application Screenshots
+            <h2 className={`flex items-center gap-3 text-2xl font-bold mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
+                <Monitor className="w-5 h-5 text-white" />
+              </div>
+              Application Demo
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {details.screenshots.map((screenshot, index) => (
@@ -155,70 +235,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
         </section>
       )}
 
-      {/* Project Overview */}
-      <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
-        <div className="max-w-5xl mx-auto">
-          <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
-              <Layers className="w-5 h-5 text-white" />
-            </div>
-            Project Overview
-          </h2>
-          <p className={`text-base leading-relaxed mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-            {details.overview}
-          </p>
-
-          {/* Industry Challenge */}
-          {details.industryChallenge && (
-            <div className={`p-6 rounded-xl mb-8 ${darkMode ? 'bg-gray-800' : 'bg-white'} border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
-              <h3 className={`text-lg font-semibold mb-3 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                Industry Challenge
-              </h3>
-              <p className={`text-sm leading-relaxed ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                {details.industryChallenge}
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* System Architecture */}
-      <section className={`py-16 px-6 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
-        <div className="max-w-5xl mx-auto">
-          <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
-              <Server className="w-5 h-5 text-white" />
-            </div>
-            System Architecture
-          </h2>
-          
-          {details.architectureDescription && (
-            <p className={`text-base leading-relaxed mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              {details.architectureDescription}
-            </p>
-          )}
-
-          {/* Architecture Flow */}
-          <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              {details.architectureFlow.map((step, index) => (
-                <React.Fragment key={index}>
-                  <div className={`px-4 py-3 rounded-lg text-center ${
-                    darkMode ? 'bg-gray-700 text-gray-200' : 'bg-white text-gray-700'
-                  } shadow-sm border ${darkMode ? 'border-gray-600' : 'border-gray-200'}`}>
-                    <span className="text-sm font-medium">{step}</span>
-                  </div>
-                  {index < details.architectureFlow.length - 1 && (
-                    <div className={`text-2xl ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>→</div>
-                  )}
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Features */}
+      {/* 4. Key Features */}
       <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
         <div className="max-w-5xl mx-auto">
           <h2 className={`flex items-center gap-3 text-2xl font-bold mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
@@ -243,7 +260,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
         </div>
       </section>
 
-      {/* Tech Stack */}
+      {/* 5. Tech Stack */}
       <section className={`py-16 px-6 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <div className="max-w-5xl mx-auto">
           <h2 className={`flex items-center gap-3 text-2xl font-bold mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
@@ -307,7 +324,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
       )}
 
       {/* Back to Projects */}
-      <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
+      <section className={`py-16 px-6 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <div className="max-w-5xl mx-auto text-center">
           <button
             onClick={onBack}
