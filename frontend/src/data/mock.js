@@ -229,12 +229,54 @@ export const projects = [
   {
     id: 2,
     title: "Enterprise Capital Optimization Dashboard",
-    description: "Built an interactive Tableau dashboard analyzing accounts receivable and accounts payable data to monitor working capital performance. Generated insights that support cash flow planning and financial decision-making by identifying payment delays and credit utilization patterns.",
+    description: "Built interactive Tableau dashboards analyzing accounts receivable and accounts payable data to monitor working capital performance. Generated insights that support cash flow planning and financial decision-making by identifying payment delays and credit utilization patterns.",
     image: null,
     link: null,
     githubLink: null,
     type: "Project",
-    tags: ["Tableau", "Microsoft SQL Server", "AWS RDS", "Data Analytics", "Financial Analysis"]
+    tags: ["Tableau", "Microsoft SQL Server", "AWS RDS", "Data Analytics", "Financial Analysis"],
+    details: {
+      heroDescription: "A comprehensive data analysis solution using Tableau to optimize working capital management. The dashboards provide real-time visibility into accounts receivable and payable, enabling businesses to improve cash flow, reduce borrowing costs, and maintain financial stability.",
+      duration: null,
+      role: null,
+      projectType: null,
+      overview: "This project focuses on working capital optimization through comprehensive analysis of receivables and payables data using Tableau. By visualizing key financial metrics and trends, the solution helps organizations refine cash flow strategies, improve financial performance, and make data-driven decisions for better liquidity management.",
+      industryChallenge: "Organizations struggle with efficient management of short-term assets and liabilities to ensure sufficient liquidity for operations while minimizing costs. Key challenges include optimizing inventory levels, speeding up accounts receivable collection, and effectively managing accounts payable timing. Poor working capital management leads to cash flow issues, increased borrowing costs, and financial instability.",
+      architectureDescription: "The solution leverages Microsoft SQL Server hosted on AWS RDS as the data source, connected to Tableau for advanced visualization and dashboard development. The architecture enables real-time data analysis and interactive reporting for financial stakeholders.",
+      architectureFlow: [
+        "AWS RDS (SQL Server)",
+        "Data Connection",
+        "Tableau Desktop",
+        "Data Transformation",
+        "Dashboard Creation",
+        "Insights & Reporting"
+      ],
+      techStack: [
+        { name: "Tableau", category: "Visualization", icon: null },
+        { name: "SQL Server", category: "Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
+        { name: "AWS RDS", category: "Cloud Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+        { name: "SQL", category: "Query Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" }
+      ],
+      keyFeatures: [
+        "Accounts Receivable Dashboard with payment tracking, aging analysis, and credit limit monitoring",
+        "Accounts Payable Dashboard with invoice status, overdue payments, and late fee analysis",
+        "Real-time visualization of key financial metrics and trends",
+        "Cash flow analysis with payment date vs due date comparisons",
+        "Credit utilization patterns and customer payment behavior insights",
+        "Supplier payment cycle analysis and vendor performance tracking",
+        "Interactive filters for date ranges, regions, and customer segments",
+        "Currency conversion support for multi-currency transactions",
+        "Actionable insights for stakeholders to optimize working capital"
+      ],
+      metrics: [
+        { value: "2", label: "Interactive Dashboards" },
+        { value: "15+", label: "Key Metrics Tracked" },
+        { value: "Real-time", label: "Data Refresh" },
+        { value: "Multi", label: "Currency Support" }
+      ],
+      architectureImage: null,
+      screenshots: []
+    }
   }
 ];
 
