@@ -172,7 +172,7 @@ export const projects = [
       heroDescription: "A groundbreaking Text-to-SQL application that leverages Large Language Models to convert natural language queries into optimized SQL commands. Built to democratize data access for non-technical users while accelerating query development for experienced programmers.",
       duration: null,
       role: null,
-      projectType: "Personal Project",
+      projectType: null,
       overview: "SQLGenPro is a Streamlit-based web application that bridges the gap between natural language and SQL databases. By leveraging OpenAI's GPT-4 model through LangChain framework, it enables users to interact with complex databases using plain English queries. The system automatically generates optimized SQL, validates the syntax, executes queries on connected databases (Databricks/Snowflake), and presents results in an intuitive interface.",
       industryChallenge: "Organizations rely heavily on data but face a significant bottleneck in extracting meaningful insights due to the need for SQL expertise. Writing SQL queries is challenging for professionals without technical backgrounds (business analysts, product managers, executives), and even experienced coders find writing complex SQL queries time-consuming. This dependency on specialized teams delays decision-making and hampers productivity, especially in critical business situations.",
       architectureDescription: "The system follows a modular architecture with clear separation of concerns. User queries are processed through LangChain's prompt engineering pipeline, sent to GPT-4 for SQL generation, validated and optimized, then executed against the target database. Results are formatted and displayed with options to save queries to favorites or export data.",
