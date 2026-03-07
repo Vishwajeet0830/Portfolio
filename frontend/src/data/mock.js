@@ -252,7 +252,7 @@ export const projects = [
         "Insights & Reporting"
       ],
       techStack: [
-        { name: "Tableau", category: "Visualization", icon: null },
+        { name: "Tableau", category: "Visualization", icon: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg" },
         { name: "SQL Server", category: "Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
         { name: "AWS RDS", category: "Cloud Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
         { name: "SQL", category: "Query Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" }
