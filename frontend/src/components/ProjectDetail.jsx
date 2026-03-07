@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Github, ExternalLink, Calendar, User, Briefcase, CheckCircle, Zap, Database, Code, Server, Brain, Layers, Target, Clock } from 'lucide-react';
+import { ArrowLeft, Github, ExternalLink, Calendar, User, Briefcase, CheckCircle, Zap, Database, Code, Server, Brain, Layers, Target } from 'lucide-react';
 
 const ProjectDetail = ({ project, darkMode, onBack }) => {
   if (!project || !project.details) return null;
