@@ -275,7 +275,8 @@ export const projects = [
         { value: "Multi", label: "Currency Support" }
       ],
       architectureImage: null,
-      screenshots: []
+      screenshots: [],
+      sectionType: "dashboard"
     }
   }
 ];
