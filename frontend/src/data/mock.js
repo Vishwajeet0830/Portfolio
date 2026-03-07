@@ -193,7 +193,6 @@ export const projects = [
         { name: "Streamlit", category: "Frontend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" },
         { name: "AWS EC2", category: "Deployment", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
         { name: "Databricks", category: "Data Platform", icon: null },
-        { name: "Snowflake", category: "Data Warehouse", icon: null },
         { name: "SQLAlchemy", category: "ORM", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" },
         { name: "Pandas", category: "Data Processing", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
         { name: "NumPy", category: "Computation", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" }
@@ -214,10 +213,10 @@ export const projects = [
         { value: "40%", label: "Faster Query Development" },
         { value: "95%", label: "SQL Accuracy Rate" },
         { value: "500+", label: "Query Types Supported" },
-        { value: "2", label: "Database Platforms" }
+        { value: "1", label: "Database Platform" }
       ],
+      architectureImage: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/gmvewr60_Gemini_Generated_Image_deuvfrdeuvfrdeuv.png",
       screenshots: [
-        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/gmvewr60_Gemini_Generated_Image_deuvfrdeuvfrdeuv.png", caption: "System Architecture - End-to-end flow from authentication to SQL generation" },
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/hcqhmqnd_Screenshot%202026-03-07%20at%204.48.34%E2%80%AFPM.jpeg", caption: "Main Dashboard - Database connection with Quick Analysis, Favorites, and Deep-Dive Analysis sections" },
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/7br7j1e6_Screenshot%202026-03-07%20at%204.48.39%E2%80%AFPM.jpeg", caption: "ERD Diagram - Auto-generated Entity Relationship Diagram for selected schema" },
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/xljr7zd2_Screenshot%202026-03-07%20at%204.49.23%E2%80%AFPM.png", caption: "Quick Analysis - Pre-built analysis questions for instant insights" },
