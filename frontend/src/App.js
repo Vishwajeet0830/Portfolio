@@ -8,9 +8,11 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ProjectDetail from './components/ProjectDetail';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     // Check for saved preference
@@ -33,6 +35,28 @@ function App() {
     }
   }, [darkMode]);
 
+  // Scroll to top when viewing project detail
+  useEffect(() => {
+    if (selectedProject) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [selectedProject]);
+
+  // If a project with details is selected, show the detail page
+  if (selectedProject && selectedProject.details) {
+    return (
+      <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <ProjectDetail 
+          project={selectedProject} 
+          darkMode={darkMode} 
+          onBack={() => setSelectedProject(null)} 
+        />
+        <Footer darkMode={darkMode} />
+      </div>
+    );
+  }
+
   return (
     <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -40,7 +64,7 @@ function App() {
         <Hero darkMode={darkMode} />
         <Services darkMode={darkMode} />
         <Experience darkMode={darkMode} />
-        <Projects darkMode={darkMode} />
+        <Projects darkMode={darkMode} onProjectSelect={setSelectedProject} />
         <Certifications darkMode={darkMode} />
         <Contact darkMode={darkMode} />
       </main>
