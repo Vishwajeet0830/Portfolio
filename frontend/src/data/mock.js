@@ -166,7 +166,7 @@ export const projects = [
     image: null,
     link: null,
     githubLink: "https://github.com/Vishwajeet0830/SQLGenPro",
-    type: "Personal",
+    type: "Project",
     tags: ["Python", "LangChain", "OpenAI GPT-4", "Streamlit", "AWS", "Databricks"],
     details: {
       heroDescription: "A groundbreaking Text-to-SQL application that leverages Large Language Models to convert natural language queries into optimized SQL commands. Built to democratize data access for non-technical users while accelerating query development for experienced programmers.",
