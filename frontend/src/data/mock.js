@@ -228,39 +228,13 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Enterprise Chatbot for Treasury Knowledge Management",
-    description: "Engineered an enterprise-grade RAG-based assistant to streamline access to internal treasury and risk documents. Deployed agentic frameworks for multi-step reasoning, enabling autonomous retrieval, interpretation, and summarization of business insights.",
+    title: "Enterprise Capital Optimization Dashboard",
+    description: "Built an interactive Tableau dashboard analyzing accounts receivable and accounts payable data to monitor working capital performance. Generated insights that support cash flow planning and financial decision-making by identifying payment delays and credit utilization patterns.",
     image: null,
     link: null,
-    type: "Work",
-    tags: ["RAG", "LangChain", "Azure OpenAI", "Cosmos DB", "Log Analytics"]
-  },
-  {
-    id: 3,
-    title: "RAG-Based Assistant for Supply Chain Insights",
-    description: "Developed a domain-specific agent leveraging RAG and MongoDB to answer natural language queries on contracts, inventory, and shipment data. Designed hybrid search pipeline with VoyageAI embeddings for accurate retrieval.",
-    image: null,
-    link: null,
-    type: "Personal",
-    tags: ["RAG", "MongoDB", "VoyageAI", "NLP", "Python"]
-  },
-  {
-    id: 4,
-    title: "Marketing & Product Performance Dashboard",
-    description: "Built comprehensive Power BI dashboards for UK's largest Oil and Gas corporations, yielding 20% increase in data-driven insights for marketing and product teams.",
-    image: null,
-    link: null,
-    type: "Work",
-    tags: ["Power BI", "SQL", "Data Analytics", "Dashboard", "KPIs"]
-  },
-  {
-    id: 5,
-    title: "HR Recruitment Analytics Dashboard",
-    description: "Designed an HR dashboard to track recruitment KPIs including candidates interviewed, selected, accepted offers, and joined - managing data for 800+ profiles.",
-    image: null,
-    link: null,
-    type: "Work",
-    tags: ["Power BI", "HR Analytics", "KPI Tracking", "Data Visualization"]
+    githubLink: null,
+    type: "Project",
+    tags: ["Tableau", "Microsoft SQL Server", "AWS RDS", "Data Analytics", "Financial Analysis"]
   }
 ];
 
