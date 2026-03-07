@@ -161,6 +161,50 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: "SQLGenPro - Text-to-SQL LLM Application",
+    description: "A productivity tool that converts natural language queries into optimized SQL commands using LLMs. Built for Product Managers, Business Stakeholders, and developers to democratize data access.",
+    image: null,
+    link: null,
+    githubLink: "https://github.com/Vishwajeet0830/SQLGenPro",
+    type: "Personal",
+    tags: ["Python", "LangChain", "OpenAI GPT-4", "Streamlit", "AWS", "Databricks", "Snowflake"],
+    details: {
+      problemStatement: "Organizations rely heavily on data but face a significant bottleneck in extracting meaningful insights due to the need for SQL expertise. Writing SQL queries is challenging for professionals without technical backgrounds (business analysts, product managers, executives), and even experienced coders find writing complex SQL queries time-consuming. This dependency on specialized teams delays decision-making and hampers productivity.",
+      solution: "SQLGenPro is a Streamlit-based web application that leverages Large Language Models (GPT-4) to convert natural language queries into optimized SQL commands. It democratizes data access, reduces reliance on SQL experts, accelerates decision-making, and enhances productivity for both technical and non-technical users.",
+      architectureFlow: [
+        "User Input (Natural Language)",
+        "LangChain Processing",
+        "OpenAI GPT-4 API",
+        "SQL Generation & Validation",
+        "Database Execution (Databricks/Snowflake)",
+        "Results Display"
+      ],
+      techStack: [
+        { name: "Python 3.10", category: "Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        { name: "LangChain", category: "LLM Framework", icon: null },
+        { name: "OpenAI GPT-4", category: "LLM", icon: null },
+        { name: "Streamlit", category: "Frontend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" },
+        { name: "AWS EC2", category: "Deployment", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+        { name: "Databricks", category: "Database", icon: null },
+        { name: "Snowflake", category: "Database", icon: null },
+        { name: "SQLAlchemy", category: "ORM", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" },
+        { name: "Pandas", category: "Data Processing", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" }
+      ],
+      keyFeatures: [
+        "Natural Language to SQL conversion using GPT-4",
+        "Support for complex queries (CTEs, JOINs, subqueries)",
+        "Quick Analysis & Deep Dive Analysis modes",
+        "Favorites section for saving frequent queries",
+        "User authentication with secure session management",
+        "SQL validation and optimization",
+        "Self-correction feedback loop for improved accuracy",
+        "ERD diagram generation using LLMs",
+        "Secure HTTPS deployment on AWS EC2"
+      ]
+    }
+  },
+  {
+    id: 2,
     title: "Enterprise Chatbot for Treasury Knowledge Management",
     description: "Engineered an enterprise-grade RAG-based assistant to streamline access to internal treasury and risk documents. Deployed agentic frameworks for multi-step reasoning, enabling autonomous retrieval, interpretation, and summarization of business insights.",
     image: null,
@@ -169,7 +213,7 @@ export const projects = [
     tags: ["RAG", "LangChain", "Azure OpenAI", "Cosmos DB", "Log Analytics"]
   },
   {
-    id: 2,
+    id: 3,
     title: "RAG-Based Assistant for Supply Chain Insights",
     description: "Developed a domain-specific agent leveraging RAG and MongoDB to answer natural language queries on contracts, inventory, and shipment data. Designed hybrid search pipeline with VoyageAI embeddings for accurate retrieval.",
     image: null,
@@ -178,7 +222,7 @@ export const projects = [
     tags: ["RAG", "MongoDB", "VoyageAI", "NLP", "Python"]
   },
   {
-    id: 3,
+    id: 4,
     title: "Marketing & Product Performance Dashboard",
     description: "Built comprehensive Power BI dashboards for UK's largest Oil and Gas corporations, yielding 20% increase in data-driven insights for marketing and product teams.",
     image: null,
@@ -187,7 +231,7 @@ export const projects = [
     tags: ["Power BI", "SQL", "Data Analytics", "Dashboard", "KPIs"]
   },
   {
-    id: 4,
+    id: 5,
     title: "HR Recruitment Analytics Dashboard",
     description: "Designed an HR dashboard to track recruitment KPIs including candidates interviewed, selected, accepted offers, and joined - managing data for 800+ profiles.",
     image: null,
