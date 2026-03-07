@@ -46,11 +46,6 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
             }`}>
               AI/LLM
             </span>
-            <span className={`px-3 py-1 text-xs font-medium rounded-full ${
-              darkMode ? 'bg-amber-900/50 text-amber-300' : 'bg-amber-100 text-amber-700'
-            }`}>
-              Full Stack
-            </span>
           </div>
 
           {/* Title */}
