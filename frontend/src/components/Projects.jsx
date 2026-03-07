@@ -307,8 +307,12 @@ const ProjectCard = ({ project, darkMode, onClick }) => {
   );
 };
 
-const Projects = ({ darkMode }) => {
-  const [selectedProject, setSelectedProject] = useState(null);
+const Projects = ({ darkMode, onProjectSelect }) => {
+  const handleProjectClick = (project) => {
+    if (project.details) {
+      onProjectSelect(project);
+    }
+  };
 
   return (
     <section
@@ -343,20 +347,11 @@ const Projects = ({ darkMode }) => {
               key={project.id} 
               project={project} 
               darkMode={darkMode} 
-              onClick={setSelectedProject}
+              onClick={handleProjectClick}
             />
           ))}
         </div>
       </div>
-
-      {/* Project Detail Modal */}
-      {selectedProject && (
-        <ProjectDetailModal
-          project={selectedProject}
-          darkMode={darkMode}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
     </section>
   );
 };
