@@ -75,21 +75,6 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4">
-            {project.githubLink && (
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  darkMode
-                    ? 'bg-white text-gray-900 hover:bg-gray-200'
-                    : 'bg-gray-900 text-white hover:bg-gray-700'
-                }`}
-              >
-                <Github className="w-5 h-5" />
-                View on GitHub
-              </a>
-            )}
             {project.link && (
               <a
                 href={project.link}
