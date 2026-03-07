@@ -262,7 +262,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
             <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
               <Code className="w-5 h-5 text-white" />
             </div>
-            Technologies Used
+            Tech Stack
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {details.techStack.map((tech, index) => (

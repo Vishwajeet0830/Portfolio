@@ -189,7 +189,7 @@ export const projects = [
       techStack: [
         { name: "Python 3.10", category: "Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
         { name: "LangChain", category: "LLM Framework", icon: "https://cdn.simpleicons.org/langchain/1C3C3C" },
-        { name: "OpenAI GPT-4", category: "LLM Model", icon: "https://cdn.simpleicons.org/openai/412991" },
+        { name: "OpenAI GPT-4", category: "LLM Model", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
         { name: "Streamlit", category: "Frontend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" },
         { name: "AWS EC2", category: "Deployment", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
         { name: "Databricks", category: "Data Platform", icon: "https://cdn.simpleicons.org/databricks/FF3621" },
