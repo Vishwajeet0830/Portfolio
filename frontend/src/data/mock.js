@@ -221,6 +221,7 @@ export const projects = [
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/7br7j1e6_Screenshot%202026-03-07%20at%204.48.39%E2%80%AFPM.jpeg", caption: "ERD Diagram - Auto-generated Entity Relationship Diagram for selected schema" },
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/e4d05tmt_Screenshot%202026-03-07%20at%204.49.11%E2%80%AFPM.jpeg", caption: "Quick Analysis - Pre-built analysis questions for instant insights" },
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/85tcc9y4_Screenshot%202026-03-07%20at%205.24.10%E2%80%AFPM.jpeg", caption: "Favorites Section - Save and reuse frequently used queries with generated SQL" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/pbrod2m0_Image%203-7-26%20at%205.28%E2%80%AFPM.jpeg", caption: "Favorites - View saved questions with auto-generated SQL queries" },
         { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/3281lnlw_Screenshot%202026-03-07%20at%204.49.14%E2%80%AFPM.jpeg", caption: "SQL Generation - Complex SQL query generated from natural language question" }
       ]
     }
