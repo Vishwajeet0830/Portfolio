@@ -161,39 +161,123 @@ export const education = [
 export const projects = [
   {
     id: 1,
-    title: "Enterprise Chatbot for Treasury Knowledge Management",
-    description: "Engineered an enterprise-grade RAG-based assistant to streamline access to internal treasury and risk documents. Deployed agentic frameworks for multi-step reasoning, enabling autonomous retrieval, interpretation, and summarization of business insights.",
+    title: "SQLGenPro - Text-to-SQL LLM Application",
+    description: "A productivity tool that converts natural language queries into optimized SQL commands using LLMs. Built for Product Managers, Business Stakeholders, and developers to democratize data access.",
     image: null,
     link: null,
-    type: "Work",
-    tags: ["RAG", "LangChain", "Azure OpenAI", "Cosmos DB", "Log Analytics"]
+    githubLink: "https://github.com/Vishwajeet0830/SQLGenPro",
+    type: "Project",
+    tags: ["Python", "LangChain", "OpenAI GPT-4", "Streamlit", "AWS", "Databricks"],
+    details: {
+      heroDescription: "A groundbreaking Text-to-SQL application that leverages Large Language Models to convert natural language queries into optimized SQL commands. Built to democratize data access for non-technical users while accelerating query development for experienced programmers.",
+      duration: null,
+      role: null,
+      projectType: null,
+      overview: "SQLGenPro is a Streamlit-based web application that bridges the gap between natural language and SQL databases. By leveraging OpenAI's GPT-4 model through LangChain framework, it enables users to interact with complex databases using plain English queries. The system automatically generates optimized SQL, validates the syntax, executes queries on connected databases (Databricks/Snowflake), and presents results in an intuitive interface.",
+      industryChallenge: "Organizations rely heavily on data but face a significant bottleneck in extracting meaningful insights due to the need for SQL expertise. Writing SQL queries is challenging for professionals without technical backgrounds (business analysts, product managers, executives), and even experienced coders find writing complex SQL queries time-consuming. This dependency on specialized teams delays decision-making and hampers productivity, especially in critical business situations.",
+      architectureDescription: "The system follows a modular architecture with clear separation of concerns. User queries are processed through LangChain's prompt engineering pipeline, sent to GPT-4 for SQL generation, validated and optimized, then executed against the target database. Results are formatted and displayed with options to save queries to favorites or export data.",
+      architectureFlow: [
+        "User Input (Natural Language)",
+        "LangChain Processing",
+        "Prompt Engineering",
+        "OpenAI GPT-4 API",
+        "SQL Generation",
+        "Validation & Optimization",
+        "Database Execution",
+        "Results Display"
+      ],
+      techStack: [
+        { name: "Python 3.10", category: "Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        { name: "LangChain", category: "LLM Framework", icon: "https://cdn.simpleicons.org/langchain/1C3C3C" },
+        { name: "OpenAI GPT-4", category: "LLM Model", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
+        { name: "Streamlit", category: "Frontend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" },
+        { name: "AWS EC2", category: "Deployment", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+        { name: "Databricks", category: "Data Platform", icon: "https://cdn.simpleicons.org/databricks/FF3621" },
+        { name: "SQLAlchemy", category: "ORM", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" },
+        { name: "Pandas", category: "Data Processing", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" },
+        { name: "NumPy", category: "Computation", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" }
+      ],
+      keyFeatures: [
+        "Natural Language to SQL conversion using GPT-4 with context-aware understanding",
+        "Support for complex queries including CTEs, JOINs, subqueries, and window functions",
+        "Quick Analysis mode for instant insights on common business questions",
+        "Deep Dive Analysis for comprehensive data exploration",
+        "Favorites section for saving and reusing frequent queries",
+        "User authentication with secure session management",
+        "SQL validation and optimization before execution",
+        "Self-correction feedback loop for improved accuracy over time",
+        "Dynamic ERD diagram generation using LLMs",
+        "Secure HTTPS deployment on AWS EC2 with scalability"
+      ],
+      metrics: [
+        { value: "40%", label: "Faster Query Development" },
+        { value: "95%", label: "SQL Accuracy Rate" },
+        { value: "500+", label: "Query Types Supported" },
+        { value: "1", label: "Database Platform" }
+      ],
+      architectureImage: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/gmvewr60_Gemini_Generated_Image_deuvfrdeuvfrdeuv.png",
+      screenshots: [
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/hcqhmqnd_Screenshot%202026-03-07%20at%204.48.34%E2%80%AFPM.jpeg", caption: "Main Dashboard - Database connection with Quick Analysis, Favorites, and Deep-Dive Analysis sections" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/7br7j1e6_Screenshot%202026-03-07%20at%204.48.39%E2%80%AFPM.jpeg", caption: "ERD Diagram - Auto-generated Entity Relationship Diagram for selected schema" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/e4d05tmt_Screenshot%202026-03-07%20at%204.49.11%E2%80%AFPM.jpeg", caption: "Quick Analysis - Pre-built analysis questions for instant insights" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/85tcc9y4_Screenshot%202026-03-07%20at%205.24.10%E2%80%AFPM.jpeg", caption: "Favorites Section - Save and reuse frequently used queries with generated SQL" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/pbrod2m0_Image%203-7-26%20at%205.28%E2%80%AFPM.jpeg", caption: "Favorites - View saved questions with auto-generated SQL queries" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/3281lnlw_Screenshot%202026-03-07%20at%204.49.14%E2%80%AFPM.jpeg", caption: "SQL Generation - Complex SQL query generated from natural language question" }
+      ]
+    }
   },
   {
     id: 2,
-    title: "RAG-Based Assistant for Supply Chain Insights",
-    description: "Developed a domain-specific agent leveraging RAG and MongoDB to answer natural language queries on contracts, inventory, and shipment data. Designed hybrid search pipeline with VoyageAI embeddings for accurate retrieval.",
+    title: "Enterprise Capital Optimization Dashboard",
+    description: "Built interactive Tableau dashboards analyzing accounts receivable and accounts payable data to monitor working capital performance. Generated insights that support cash flow planning and financial decision-making by identifying payment delays and credit utilization patterns.",
     image: null,
     link: null,
-    type: "Personal",
-    tags: ["RAG", "MongoDB", "VoyageAI", "NLP", "Python"]
-  },
-  {
-    id: 3,
-    title: "Marketing & Product Performance Dashboard",
-    description: "Built comprehensive Power BI dashboards for UK's largest Oil and Gas corporations, yielding 20% increase in data-driven insights for marketing and product teams.",
-    image: null,
-    link: null,
-    type: "Work",
-    tags: ["Power BI", "SQL", "Data Analytics", "Dashboard", "KPIs"]
-  },
-  {
-    id: 4,
-    title: "HR Recruitment Analytics Dashboard",
-    description: "Designed an HR dashboard to track recruitment KPIs including candidates interviewed, selected, accepted offers, and joined - managing data for 800+ profiles.",
-    image: null,
-    link: null,
-    type: "Work",
-    tags: ["Power BI", "HR Analytics", "KPI Tracking", "Data Visualization"]
+    githubLink: null,
+    type: "Project",
+    tags: ["Tableau", "Microsoft SQL Server", "AWS RDS", "Data Analytics", "Financial Analysis"],
+    details: {
+      heroDescription: "A comprehensive data analysis solution using Tableau to optimize working capital management. The dashboards provide real-time visibility into accounts receivable and payable, enabling businesses to improve cash flow, reduce borrowing costs, and maintain financial stability.",
+      duration: null,
+      role: null,
+      projectType: null,
+      overview: "This project focuses on working capital optimization through comprehensive analysis of receivables and payables data using Tableau. By visualizing key financial metrics and trends, the solution helps organizations refine cash flow strategies, improve financial performance, and make data-driven decisions for better liquidity management.",
+      industryChallenge: "Organizations struggle with efficient management of short-term assets and liabilities to ensure sufficient liquidity for operations while minimizing costs. Key challenges include optimizing inventory levels, speeding up accounts receivable collection, and effectively managing accounts payable timing. Poor working capital management leads to cash flow issues, increased borrowing costs, and financial instability.",
+      architectureDescription: "The solution leverages Microsoft SQL Server hosted on AWS RDS as the data source, connected to Tableau for advanced visualization and dashboard development. The architecture enables real-time data analysis and interactive reporting for financial stakeholders.",
+      architectureFlow: [
+        "AWS RDS (SQL Server)",
+        "Data Connection",
+        "Tableau Desktop",
+        "Data Transformation",
+        "Dashboard Creation",
+        "Insights & Reporting"
+      ],
+      techStack: [
+        { name: "Tableau", category: "Visualization", icon: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg" },
+        { name: "SQL Server", category: "Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
+        { name: "AWS RDS", category: "Cloud Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+        { name: "SQL", category: "Query Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" }
+      ],
+      keyFeatures: [
+        "Accounts Receivable Dashboard with payment tracking, aging analysis, and credit limit monitoring",
+        "Accounts Payable Dashboard with invoice status, overdue payments, and late fee analysis",
+        "Real-time visualization of key financial metrics and trends",
+        "Cash flow analysis with payment date vs due date comparisons",
+        "Credit utilization patterns and customer payment behavior insights",
+        "Supplier payment cycle analysis and vendor performance tracking",
+        "Interactive filters for date ranges, regions, and customer segments",
+        "Currency conversion support for multi-currency transactions",
+        "Actionable insights for stakeholders to optimize working capital"
+      ],
+      metrics: [
+        { value: "2", label: "Interactive Dashboards" },
+        { value: "15+", label: "Key Metrics Tracked" },
+        { value: "Real-time", label: "Data Refresh" },
+        { value: "Multi", label: "Currency Support" }
+      ],
+      architectureImage: null,
+      screenshots: [],
+      sectionType: "dashboard"
+    }
   }
 ];
 
