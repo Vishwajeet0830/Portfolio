@@ -121,14 +121,18 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
         </div>
       </section>
 
-      {/* 2. System Architecture */}
+      {/* 2. System Architecture OR Dashboard Section */}
       <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
         <div className="max-w-5xl mx-auto">
           <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
-              <Server className="w-5 h-5 text-white" />
+              {details.sectionType === 'dashboard' ? (
+                <Monitor className="w-5 h-5 text-white" />
+              ) : (
+                <Server className="w-5 h-5 text-white" />
+              )}
             </div>
-            System Architecture
+            {details.sectionType === 'dashboard' ? 'Dashboard' : 'System Architecture'}
           </h2>
           
           {details.architectureDescription && (
@@ -142,9 +146,28 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
             <div className={`rounded-xl overflow-hidden border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
               <img
                 src={details.architectureImage}
-                alt="System Architecture"
+                alt={details.sectionType === 'dashboard' ? 'Dashboard' : 'System Architecture'}
                 className="w-full h-auto"
               />
+            </div>
+          )}
+
+          {/* Dashboard Screenshots */}
+          {details.sectionType === 'dashboard' && details.dashboardImages && details.dashboardImages.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {details.dashboardImages.map((img, index) => (
+                <div
+                  key={index}
+                  className={`rounded-xl overflow-hidden border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}
+                >
+                  <img src={img.url} alt={img.caption || `Dashboard ${index + 1}`} className="w-full h-auto" />
+                  {img.caption && (
+                    <div className={`p-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
+                      <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{img.caption}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           )}
         </div>
