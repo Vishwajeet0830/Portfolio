@@ -59,25 +59,8 @@ const ProjectCard = ({ project, darkMode, onClick }) => {
         </div>
       </div>
 
-      {/* Type Badge */}
+      {/* Badge */}
       <div className="mb-3 flex items-center gap-2">
-        <span
-          className={`px-3 py-1 text-xs font-medium rounded-full ${
-            project.type === 'Work'
-              ? darkMode
-                ? 'bg-blue-900/50 text-blue-300'
-                : 'bg-blue-100 text-blue-700'
-              : project.type === 'Freelancer'
-              ? darkMode
-                ? 'bg-green-900/50 text-green-300'
-                : 'bg-green-100 text-green-700'
-              : darkMode
-              ? 'bg-purple-900/50 text-purple-300'
-              : 'bg-purple-100 text-purple-700'
-          }`}
-        >
-          {project.type}
-        </span>
         {project.inProgress && (
           <span className={`px-3 py-1 text-xs font-medium rounded-full ${
             darkMode ? 'bg-amber-900/50 text-amber-300' : 'bg-amber-100 text-amber-700'
