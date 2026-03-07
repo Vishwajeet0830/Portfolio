@@ -306,38 +306,6 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
         </section>
       )}
 
-      {/* Development Timeline */}
-      {details.timeline && (
-        <section className={`py-16 px-6 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
-          <div className="max-w-5xl mx-auto">
-            <h2 className={`flex items-center gap-3 text-2xl font-bold mb-8 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
-                <Clock className="w-5 h-5 text-white" />
-              </div>
-              Development Timeline
-            </h2>
-            <div className="space-y-4">
-              {details.timeline.map((phase, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center gap-4 p-4 rounded-xl ${
-                    darkMode ? 'bg-gray-800' : 'bg-gray-50'
-                  }`}
-                >
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: '#f47272' }}>
-                    <span className="text-white font-bold">{index + 1}</span>
-                  </div>
-                  <div className="flex-1">
-                    <p className={`font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>{phase.phase}</p>
-                    <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>{phase.duration}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Back to Projects */}
       <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
         <div className="max-w-5xl mx-auto text-center">
