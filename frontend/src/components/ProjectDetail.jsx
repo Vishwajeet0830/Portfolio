@@ -154,7 +154,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
           {/* Architecture Image */}
           {details.architectureImage && (
-            <div className={`rounded-xl overflow-hidden border mb-8 ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+            <div className={`rounded-xl overflow-hidden border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
               <img
                 src={details.architectureImage}
                 alt="System Architecture"
@@ -162,27 +162,6 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
               />
             </div>
           )}
-
-          {/* Architecture Flow */}
-          <div className={`p-6 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-white'} border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
-            <h3 className={`text-lg font-semibold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Data Flow
-            </h3>
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              {details.architectureFlow.map((step, index) => (
-                <React.Fragment key={index}>
-                  <div className={`px-4 py-3 rounded-lg text-center ${
-                    darkMode ? 'bg-gray-700 text-gray-200' : 'bg-gray-50 text-gray-700'
-                  } shadow-sm border ${darkMode ? 'border-gray-600' : 'border-gray-200'}`}>
-                    <span className="text-sm font-medium">{step}</span>
-                  </div>
-                  {index < details.architectureFlow.length - 1 && (
-                    <div className={`text-2xl ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>→</div>
-                  )}
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
