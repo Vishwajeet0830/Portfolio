@@ -34,11 +34,26 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">
-            <span className={`px-3 py-1 text-xs font-medium rounded-full ${
-              darkMode ? 'bg-green-900/50 text-green-300' : 'bg-green-100 text-green-700'
-            }`}>
-              AI/LLM
-            </span>
+            {details.sectionType === 'dashboard' ? (
+              <>
+                <span className={`px-3 py-1 text-xs font-medium rounded-full ${
+                  darkMode ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-700'
+                }`}>
+                  Data Analysis
+                </span>
+                <span className={`px-3 py-1 text-xs font-medium rounded-full ${
+                  darkMode ? 'bg-purple-900/50 text-purple-300' : 'bg-purple-100 text-purple-700'
+                }`}>
+                  Data Visualization
+                </span>
+              </>
+            ) : (
+              <span className={`px-3 py-1 text-xs font-medium rounded-full ${
+                darkMode ? 'bg-green-900/50 text-green-300' : 'bg-green-100 text-green-700'
+              }`}>
+                AI/LLM
+              </span>
+            )}
           </div>
 
           {/* Title */}
