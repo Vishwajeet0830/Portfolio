@@ -169,7 +169,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
           {/* Dashboard Screenshots */}
           {details.sectionType === 'dashboard' && details.dashboardImages && details.dashboardImages.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-8">
               {details.dashboardImages.map((img, index) => (
                 <div
                   key={index}
@@ -178,7 +178,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
                   <img src={img.url} alt={img.caption || `Dashboard ${index + 1}`} className="w-full h-auto" />
                   {img.caption && (
                     <div className={`p-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
-                      <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{img.caption}</p>
+                      <p className={`text-base font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{img.caption}</p>
                     </div>
                   )}
                 </div>
