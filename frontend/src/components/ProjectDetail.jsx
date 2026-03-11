@@ -138,7 +138,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
       {/* 2. System Architecture OR Dashboard Section */}
       <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
-        <div className="max-w-5xl mx-auto">
+        <div className={`mx-auto ${details.sectionType === 'dashboard' ? 'max-w-6xl' : 'max-w-5xl'}`}>
           <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
               {details.sectionType === 'dashboard' ? (
