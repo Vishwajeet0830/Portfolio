@@ -234,7 +234,7 @@ export const projects = [
     link: null,
     githubLink: null,
     type: "Project",
-    tags: ["Tableau", "Microsoft SQL Server", "AWS RDS", "Data Analytics", "Financial Analysis"],
+    tags: ["Tableau", "MySQL", "Data Analytics", "Financial Analysis"],
     details: {
       heroDescription: "A comprehensive data analysis solution using Tableau to optimize working capital management. The dashboards provide real-time visibility into accounts receivable and payable, enabling businesses to improve cash flow, reduce borrowing costs, and maintain financial stability.",
       duration: null,
@@ -242,9 +242,9 @@ export const projects = [
       projectType: null,
       overview: "This project focuses on working capital optimization through comprehensive analysis of receivables and payables data using Tableau. By visualizing key financial metrics and trends, the solution helps organizations refine cash flow strategies, improve financial performance, and make data-driven decisions for better liquidity management.",
       industryChallenge: "Organizations struggle with efficient management of short-term assets and liabilities to ensure sufficient liquidity for operations while minimizing costs. Key challenges include optimizing inventory levels, speeding up accounts receivable collection, and effectively managing accounts payable timing. Poor working capital management leads to cash flow issues, increased borrowing costs, and financial instability.",
-      architectureDescription: "The solution leverages Microsoft SQL Server hosted on AWS RDS as the data source, connected to Tableau for advanced visualization and dashboard development. The architecture enables real-time data analysis and interactive reporting for financial stakeholders.",
+      architectureDescription: "The solution leverages MySQL as the data source, connected to Tableau for advanced visualization and dashboard development. The architecture enables real-time data analysis and interactive reporting for financial stakeholders.",
       architectureFlow: [
-        "AWS RDS (SQL Server)",
+        "MySQL Database",
         "Data Connection",
         "Tableau Desktop",
         "Data Transformation",
@@ -253,8 +253,7 @@ export const projects = [
       ],
       techStack: [
         { name: "Tableau", category: "Visualization", icon: "https://cdn.worldvectorlogo.com/logos/tableau-software.svg" },
-        { name: "SQL Server", category: "Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" },
-        { name: "AWS RDS", category: "Cloud Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+        { name: "MySQL", category: "Database", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
         { name: "SQL", category: "Query Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" }
       ],
       keyFeatures: [
@@ -275,6 +274,10 @@ export const projects = [
         { value: "Multi", label: "Currency Support" }
       ],
       architectureImage: null,
+      dashboardImages: [
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/k6kafftn_Image%203-10-26%20at%2010.45%E2%80%AFPM.jpeg", caption: "Account Receivable Dashboard - Track total receivables, open amounts, payment status, and customer aging analysis" },
+        { url: "https://customer-assets.emergentagent.com/job_portfolio-clone-87/artifacts/rk4gadde_Image%203-10-26%20at%2010.50%E2%80%AFPM.jpeg", caption: "Account Payable Dashboard - Monitor total payables, invoice amounts, late payment fees, and supplier analysis" }
+      ],
       screenshots: [],
       sectionType: "dashboard"
     }

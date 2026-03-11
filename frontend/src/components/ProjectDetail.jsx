@@ -34,11 +34,26 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">
-            <span className={`px-3 py-1 text-xs font-medium rounded-full ${
-              darkMode ? 'bg-green-900/50 text-green-300' : 'bg-green-100 text-green-700'
-            }`}>
-              AI/LLM
-            </span>
+            {details.sectionType === 'dashboard' ? (
+              <>
+                <span className={`px-3 py-1 text-xs font-medium rounded-full ${
+                  darkMode ? 'bg-blue-900/50 text-blue-300' : 'bg-blue-100 text-blue-700'
+                }`}>
+                  Data Analysis
+                </span>
+                <span className={`px-3 py-1 text-xs font-medium rounded-full ${
+                  darkMode ? 'bg-purple-900/50 text-purple-300' : 'bg-purple-100 text-purple-700'
+                }`}>
+                  Data Visualization
+                </span>
+              </>
+            ) : (
+              <span className={`px-3 py-1 text-xs font-medium rounded-full ${
+                darkMode ? 'bg-green-900/50 text-green-300' : 'bg-green-100 text-green-700'
+              }`}>
+                AI/LLM
+              </span>
+            )}
           </div>
 
           {/* Title */}
@@ -123,7 +138,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
       {/* 2. System Architecture OR Dashboard Section */}
       <section className={`py-16 px-6 ${darkMode ? 'bg-gray-800/30' : 'bg-gray-50'}`}>
-        <div className="max-w-5xl mx-auto">
+        <div className={`mx-auto ${details.sectionType === 'dashboard' ? 'max-w-6xl' : 'max-w-5xl'}`}>
           <h2 className={`flex items-center gap-3 text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: '#f47272' }}>
               {details.sectionType === 'dashboard' ? (
@@ -154,7 +169,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
 
           {/* Dashboard Screenshots */}
           {details.sectionType === 'dashboard' && details.dashboardImages && details.dashboardImages.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-8">
               {details.dashboardImages.map((img, index) => (
                 <div
                   key={index}
@@ -163,7 +178,7 @@ const ProjectDetail = ({ project, darkMode, onBack }) => {
                   <img src={img.url} alt={img.caption || `Dashboard ${index + 1}`} className="w-full h-auto" />
                   {img.caption && (
                     <div className={`p-4 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
-                      <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{img.caption}</p>
+                      <p className={`text-base font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{img.caption}</p>
                     </div>
                   )}
                 </div>
