@@ -3,7 +3,7 @@
 export const personalInfo = {
   name: "Vishwajeet Niradi",
   greeting: "Hi! I'm",
-  title: "AI Engineer",
+  title: "AI / ML Engineer",
   subtitle: "AI Engineer specializing in LLM applications, RAG pipelines, production-grade AI workflows and data-driven solutions",
   email: "vniradi08@gmail.com",
   phone: "+1 862-409-0121",
