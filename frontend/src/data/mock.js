@@ -3,7 +3,7 @@
 export const personalInfo = {
   name: "Vishwajeet Niradi",
   greeting: "Hi! I'm",
-  title: "AI Engineer",
+  title: "AI / ML Engineer",
   subtitle: "AI Engineer specializing in LLM applications, RAG pipelines, production-grade AI workflows and data-driven solutions",
   email: "vniradi08@gmail.com",
   phone: "+1 862-409-0121",
@@ -99,29 +99,31 @@ export const experiences = [
     id: 1,
     company: "FIS",
     location: "New York City, NY",
-    role: "AI / Data Engineer",
-    period: "Jun 2025 - Present",
+    role: "AI Engineer",
+    period: "Jul 2025 – Feb 2026",
     type: "Full-time",
     description: [
-      "Supporting an AI-powered chatbot initiative for Treasury & Risk division, focusing on prompt engineering, RAG pipelines, and response optimization",
-      "Building backend workflows leveraging Azure SDK and cloud-native services including Key Vault and Log Analytics",
-      "Implementing agentic frameworks (LangChain, LangGraph) integrated with Azure OpenAI, Cognitive Search, and Cosmos DB"
+      "Developed LLM-powered conversational AI solutions for the Treasury & Risk division using Azure OpenAI, improving response accuracy through prompt engineering and RAG pipelines",
+      "Designed retrieval-augmented generation (RAG) architectures integrating Azure Cognitive Search and Cosmos DB for secure enterprise knowledge retrieval",
+      "Developed scalable AI backend services on Microsoft Azure, leveraging Azure SDK, Azure Key Vault for secure secrets management, and Log Analytics for system monitoring",
+      "Enhanced chatbot performance and reliability by refining prompt strategies, improving RAG retrieval pipelines, and implementing automated model evaluation workflows"
     ],
-    skills: ["LangChain", "LangGraph", "Azure OpenAI", "RAG", "Python", "Cosmos DB"]
+    skills: ["Azure OpenAI", "RAG", "LangChain", "Cosmos DB", "Azure Cognitive Search", "Python"]
   },
   {
     id: 2,
     company: "Sphara Consulting",
-    location: "Greenwich, CT",
-    role: "Data Analyst Intern",
-    period: "Jul 2024 - Dec 2024",
-    type: "Internship",
+    location: "Piscataway, NJ",
+    role: "AI / ML Engineer",
+    period: "Jul 2024 - May 2025",
+    type: "Full-time",
     description: [
-      "Increased speed and performance of Excel reports by 40% by restructuring them in Power BI",
-      "Developed web scraper scripts using Python (BeautifulSoup, Selenium) and stored data in SQL database",
-      "Established automation on 5+ websites as per client's requirements"
+      "Developed and deployed machine learning models using Python to support predictive analytics and enterprise decision-making",
+      "Built scalable data pipelines and feature engineering workflows using Python and SQL to process large-scale structured and unstructured datasets",
+      "Designed and implemented LLM-powered applications and Retrieval-Augmented Generation (RAG) pipelines to enhance enterprise search and knowledge retrieval systems",
+      "Trained and optimized machine learning models using TensorFlow, PyTorch, and Scikit-learn, improving prediction accuracy and reducing inference latency"
     ],
-    skills: ["Power BI", "Python", "SQL", "Selenium", "Web Scraping"]
+    skills: ["Python", "TensorFlow", "PyTorch", "RAG", "SQL", "Machine Learning"]
   },
   {
     id: 3,
@@ -131,11 +133,12 @@ export const experiences = [
     period: "Aug 2021 - Jul 2023",
     type: "Full-time",
     description: [
-      "Developed Marketing and Product performance dashboards using Power BI and SQL, yielding 20% increase in data-driven insights",
-      "Communicated complex analysis to non-technical stakeholders, improving performance by 25% in agile environment",
-      "Designed HR dashboard tracking KPIs for 800+ profiles as part of client recruitment initiative"
+      "Developed marketing and product performance dashboards using Power BI and SQL, increasing data-driven insights for a major UK Oil & Gas client",
+      "Improved reporting efficiency by migrating Excel reports to Power BI, increasing performance by 40%",
+      "Delivered data analysis and insights to business stakeholders, supporting decision-making and improving operational performance",
+      "Designed an HR analytics dashboard to track recruitment KPIs across 800+ candidates including interview status, offers, and onboarding metrics"
     ],
-    skills: ["Power BI", "SQL", "Data Analysis", "Dashboard Development", "Agile"]
+    skills: ["Power BI", "SQL", "Data Analysis", "Dashboard Development", "Excel"]
   }
 ];
 
@@ -161,6 +164,120 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: "Customer Support Agent using OpenAI and AzureML",
+    description: "Built an AI-powered customer support system using LLMs and Azure ML that automates ticket categorization, sentiment analysis, and response generation using RAG architecture with FAISS vector database.",
+    image: null,
+    link: null,
+    githubLink: null,
+    type: "Project",
+    tags: ["GPT-4", "FAISS", "LangChain", "RAG", "Azure ML", "Streamlit"],
+    details: {
+      heroDescription: "An enterprise-grade customer support solution that leverages Large Language Models and Azure Machine Learning to automate ticket handling, sentiment analysis, and response generation using Retrieval-Augmented Generation (RAG) architecture.",
+      duration: null,
+      role: null,
+      projectType: null,
+      overview: "This project revolutionizes the customer support process by developing a system that uses LLMs for sentiment analysis, ticket categorization, and response generation. The solution ensures critical issues are prioritized and handled promptly while Azure ML provides the infrastructure for deploying, scaling, and managing AI models efficiently.",
+      industryChallenge: "Traditional customer support systems face significant challenges with efficiently managing large influx of tickets, leading to delayed responses, misprioritization, inconsistent quality in customer service, and inability to scale. This results in increased operational costs and customer dissatisfaction, along with high costs associated with manual ticket handling.",
+      architectureDescription: "The project utilizes a Retrieval-Augmented Generation (RAG) architecture combining retrieval-based and generation-based approaches. LLMs create embeddings from text data stored in FAISS vector database for efficient similarity search. The system retrieves relevant information based on queries and generates contextually appropriate responses.",
+      architectureFlow: [
+        "Customer Query",
+        "OpenAI Embeddings",
+        "FAISS Vector Search",
+        "Context Retrieval",
+        "GPT-4 Generation",
+        "Response Output"
+      ],
+      techStack: [
+        { name: "Python 3.10", category: "Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        { name: "GPT-4", category: "LLM", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
+        { name: "FAISS", category: "Vector DB", icon: null },
+        { name: "LangChain", category: "Framework", icon: "https://cdn.simpleicons.org/langchain/1C3C3C" },
+        { name: "Azure ML", category: "Cloud Platform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+        { name: "Streamlit", category: "Frontend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" },
+        { name: "Azure Blob", category: "Storage", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+        { name: "Pandas", category: "Data", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" }
+      ],
+      keyFeatures: [
+        "Automated ticket categorization by urgency and subject matter using LLMs",
+        "Sentiment analysis on customer support tickets for priority handling",
+        "RAG-based response generation combining retrieval and generation approaches",
+        "FAISS vector database for efficient similarity search and retrieval",
+        "Response sampling mechanism to generate multiple candidates and select the best",
+        "Feedback loop for continuous prompt improvement and response quality",
+        "Modular code architecture for easy integration and maintenance",
+        "Streamlit UI for showcasing AI assistant capabilities",
+        "Scalable deployment on Azure ML with Azure App Service",
+        "Cost-optimized API and compute resource management"
+      ],
+      metrics: [
+        { value: "RAG", label: "Architecture" },
+        { value: "GPT-4", label: "LLM Model" },
+        { value: "FAISS", label: "Vector Store" },
+        { value: "Azure", label: "Cloud Platform" }
+      ],
+      architectureImage: null,
+      screenshots: []
+    }
+  },
+  {
+    id: 2,
+    title: "Multi-Agent AI Productivity Assistant with AutoGen",
+    description: "Built a multi-agent AI system using AutoGen framework that integrates Gmail, Google Calendar, weather forecasting, and web search into a unified conversational interface with Slack integration.",
+    image: null,
+    link: null,
+    githubLink: null,
+    type: "Project",
+    tags: ["GPT-4o", "AutoGen", "FastAPI", "Tavily", "Slack", "Multi-Agent"],
+    details: {
+      heroDescription: "A production-grade multi-agent AI productivity assistant built with AutoGen framework, featuring specialized agents for email, calendar, weather, and web search. Integrated with Slack for seamless conversational automation of daily workflows.",
+      duration: null,
+      role: null,
+      projectType: null,
+      overview: "This project creates a centralized, intelligent automation layer to manage daily workflows efficiently. The multi-agent system integrates diverse services (Gmail, Google Calendar, weather forecasting, web search) into a cohesive interface, replacing manual effort and context-switching with smart, conversational automation.",
+      industryChallenge: "Modern digital life involves using numerous tools (emails, calendars, weather apps, web browsers) which leads to fragmented workflows, wasted time, and decreased focus. The core issue is the lack of a unified system that can intelligently coordinate and automate tasks across these diverse tools.",
+      architectureDescription: "The system uses a collaborative network of specialized AI agents orchestrated by AutoGen framework. Each agent handles specific tasks (email, calendar, weather, search) and communicates through MagenticOneGroupChat for intelligent coordination. FastAPI server handles real-time messaging with Slack integration.",
+      architectureFlow: [
+        "User Request (Slack)",
+        "FastAPI Server",
+        "AutoGen Orchestrator",
+        "Specialized Agents",
+        "API Integrations",
+        "Response to User"
+      ],
+      techStack: [
+        { name: "Python 3.12", category: "Language", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+        { name: "GPT-4o", category: "LLM", icon: "https://cdn.worldvectorlogo.com/logos/openai-2.svg" },
+        { name: "AutoGen", category: "Agent Framework", icon: null },
+        { name: "FastAPI", category: "Backend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
+        { name: "Slack SDK", category: "Integration", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" },
+        { name: "Tavily", category: "Search API", icon: null },
+        { name: "Gmail API", category: "Google", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" },
+        { name: "Calendar API", category: "Google", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" }
+      ],
+      keyFeatures: [
+        "Specialized agents for Email, Calendar, Weather, and Search functionalities",
+        "MagenticOneGroupChat for intelligent agent coordination and task routing",
+        "Gmail API integration with LangChain toolkit for email operations",
+        "Google Calendar API for scheduling and event management",
+        "Tavily Search API for web search and research capabilities",
+        "OpenWeatherMap integration for meteorological data",
+        "Conversational interface with natural language understanding",
+        "Slack integration for familiar chat-like user experience",
+        "FastAPI-based server for real-time messaging and webhook handling",
+        "Context-aware conversation handling with agent selection logic"
+      ],
+      metrics: [
+        { value: "4+", label: "Specialized Agents" },
+        { value: "AutoGen", label: "Framework" },
+        { value: "Real-time", label: "Messaging" },
+        { value: "Slack", label: "Integration" }
+      ],
+      architectureImage: null,
+      screenshots: []
+    }
+  },
+  {
+    id: 3,
     title: "SQLGenPro - Text-to-SQL LLM Application",
     description: "A productivity tool that converts natural language queries into optimized SQL commands using LLMs. Built for Product Managers, Business Stakeholders, and developers to democratize data access.",
     image: null,
@@ -227,7 +344,7 @@ export const projects = [
     }
   },
   {
-    id: 2,
+    id: 4,
     title: "Enterprise Capital Optimization Dashboard",
     description: "Built interactive Tableau dashboards analyzing accounts receivable and accounts payable data to monitor working capital performance. Generated insights that support cash flow planning and financial decision-making by identifying payment delays and credit utilization patterns.",
     image: null,
