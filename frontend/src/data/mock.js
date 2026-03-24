@@ -99,29 +99,31 @@ export const experiences = [
     id: 1,
     company: "FIS",
     location: "New York City, NY",
-    role: "AI / Data Engineer",
-    period: "Jun 2025 - Present",
+    role: "AI Engineer",
+    period: "Jul 2025 – Feb 2026",
     type: "Full-time",
     description: [
-      "Supporting an AI-powered chatbot initiative for Treasury & Risk division, focusing on prompt engineering, RAG pipelines, and response optimization",
-      "Building backend workflows leveraging Azure SDK and cloud-native services including Key Vault and Log Analytics",
-      "Implementing agentic frameworks (LangChain, LangGraph) integrated with Azure OpenAI, Cognitive Search, and Cosmos DB"
+      "Developed LLM-powered conversational AI solutions for the Treasury & Risk division using Azure OpenAI, improving response accuracy through prompt engineering and RAG pipelines",
+      "Designed retrieval-augmented generation (RAG) architectures integrating Azure Cognitive Search and Cosmos DB for secure enterprise knowledge retrieval",
+      "Developed scalable AI backend services on Microsoft Azure, leveraging Azure SDK, Azure Key Vault for secure secrets management, and Log Analytics for system monitoring",
+      "Enhanced chatbot performance and reliability by refining prompt strategies, improving RAG retrieval pipelines, and implementing automated model evaluation workflows"
     ],
-    skills: ["LangChain", "LangGraph", "Azure OpenAI", "RAG", "Python", "Cosmos DB"]
+    skills: ["Azure OpenAI", "RAG", "LangChain", "Cosmos DB", "Azure Cognitive Search", "Python"]
   },
   {
     id: 2,
     company: "Sphara Consulting",
-    location: "Greenwich, CT",
-    role: "Data Analyst Intern",
-    period: "Jul 2024 - Dec 2024",
-    type: "Internship",
+    location: "Piscataway, NJ",
+    role: "AI / ML Engineer",
+    period: "Jul 2024 - May 2025",
+    type: "Full-time",
     description: [
-      "Increased speed and performance of Excel reports by 40% by restructuring them in Power BI",
-      "Developed web scraper scripts using Python (BeautifulSoup, Selenium) and stored data in SQL database",
-      "Established automation on 5+ websites as per client's requirements"
+      "Developed and deployed machine learning models using Python to support predictive analytics and enterprise decision-making",
+      "Built scalable data pipelines and feature engineering workflows using Python and SQL to process large-scale structured and unstructured datasets",
+      "Designed and implemented LLM-powered applications and Retrieval-Augmented Generation (RAG) pipelines to enhance enterprise search and knowledge retrieval systems",
+      "Trained and optimized machine learning models using TensorFlow, PyTorch, and Scikit-learn, improving prediction accuracy and reducing inference latency"
     ],
-    skills: ["Power BI", "Python", "SQL", "Selenium", "Web Scraping"]
+    skills: ["Python", "TensorFlow", "PyTorch", "RAG", "SQL", "Machine Learning"]
   },
   {
     id: 3,
@@ -131,11 +133,12 @@ export const experiences = [
     period: "Aug 2021 - Jul 2023",
     type: "Full-time",
     description: [
-      "Developed Marketing and Product performance dashboards using Power BI and SQL, yielding 20% increase in data-driven insights",
-      "Communicated complex analysis to non-technical stakeholders, improving performance by 25% in agile environment",
-      "Designed HR dashboard tracking KPIs for 800+ profiles as part of client recruitment initiative"
+      "Developed marketing and product performance dashboards using Power BI and SQL, increasing data-driven insights for a major UK Oil & Gas client",
+      "Improved reporting efficiency by migrating Excel reports to Power BI, increasing performance by 40%",
+      "Delivered data analysis and insights to business stakeholders, supporting decision-making and improving operational performance",
+      "Designed an HR analytics dashboard to track recruitment KPIs across 800+ candidates including interview status, offers, and onboarding metrics"
     ],
-    skills: ["Power BI", "SQL", "Data Analysis", "Dashboard Development", "Agile"]
+    skills: ["Power BI", "SQL", "Data Analysis", "Dashboard Development", "Excel"]
   }
 ];
 
