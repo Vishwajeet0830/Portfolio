@@ -336,7 +336,7 @@ export const projects = [
     }
   },
   {
-    id: 2,
+    id: 4,
     title: "Enterprise Capital Optimization Dashboard",
     description: "Built interactive Tableau dashboards analyzing accounts receivable and accounts payable data to monitor working capital performance. Generated insights that support cash flow planning and financial decision-making by identifying payment delays and credit utilization patterns.",
     image: null,
