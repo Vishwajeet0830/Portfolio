@@ -443,6 +443,12 @@ export const certifications = [
     name: "Google Data Analytics Professional Certificate",
     issuer: "Google",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
+  },
+  {
+    id: 4,
+    name: "Certified Generative AI Engineer Associate",
+    issuer: "Databricks",
+    icon: "https://cdn.simpleicons.org/databricks/FF3621"
   }
 ];
 
